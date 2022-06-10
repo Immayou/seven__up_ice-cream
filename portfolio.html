@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Портфолио</title>
+</head>
+
+<body>
+    <!-- Шапка проекта -->
+    <header class="header">
+        <div class="container header__container">
+            <nav class="navigation">
+                <a href="" class="header__logo--indent logo--black"><span class="logo--main">Web</span>Studio</a>
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a class="navigation__link" href="./index.html">Студия</a></li>
+                    <li class="navigation__item"><a class="navigation__link current" href="./portfolio.html">Портфолио</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="">Контакты</a></li>
+                </ul>
+            </nav>
+            <ul class="contacts-list header__contacts-list">
+                <li class="contacts-list__item">
+                    <a class="contacts-list__link" href="mailto:">
+                        <svg class="contacts-list__icon-envelop" width="16" height="12">
+                            <use href="./css/icons/symbol-defs.svg#icon-envelope"></use>
+                        </svg>
+                        info@devstudio.com</a>
+                </li>
+                <li class="contacts-list__item">
+                    <a class="contacts-list__link" href="tel:+380961111111">
+                        <svg class="contacts-list__icon-tel" width="10" height="16">
+                            <use href="./css/icons/symbol-defs.svg#icon-smartphone"></use>
+                        </svg>
+                        +38096 111 11 11</a>
+                </li>
+            </ul>
+            <button type="button" class="mobile-menu__button" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="mobile-menu__icon" width="40" height="40">
+                    <use href="./css/icons/symbol-defs.svg#icon-menu"></use>
+                </svg>
+            </button>
+        </div>
+    </header>
+    
+    <!-- Mob-menu -->
+    
+    <div class="mobile-menu is-hidden" id="mobile-menu">
+        <div class="container">
+            <div class="mob-menu-top">
+                <button type="button" class="mobile-menu__close-button" aria-expanded="true" aria-controls="mobile-menu">
+                    <svg class="mobile-menu__close-icon" width="40" height="40">
+                        <use href="./css/icons/symbol-defs.svg#icon-close_menu"></use>
+                    </svg>
+                </button>
+                <ul class="mobile-menu__nav-list">
+                    <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="./index.html">Студия</a></li>
+                    <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="./portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="mob-menu-bottom">
+                <ul class="mobile-menu__contacts-list">
+                    <li class="mobile-menu__contacts-item">
+                        <a class="mobile-menu__contacts-tel" href="tel:+380961111111">
+                            +38096 111 11 11</a>
+                    </li>
+                    <li class="mobile-menu__contacts-item">
+                        <a class="mobile-menu__contacts-mail" href="mailto:">
+                            info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="mobile-menu__soc-list">
+                    <li class="mobile-menu__soc-item"><a class="mobile-menu__soc-link" href="" target="_blank"
+                            rel="noopener noreferrer nofollow">Instagram</a></li>
+                    <li class="mobile-menu__soc-item"><a class="mobile-menu__soc-link" href="" target="_blank"
+                            rel="noopener noreferrer nofollow">Twitter</a></li>
+                    <li class="mobile-menu__soc-item"><a class="mobile-menu__soc-link" href="" target="_blank"
+                            rel="noopener noreferrer nofollow">Facebook</a></li>
+                    <li class="mobile-menu__soc-item"><a class="mobile-menu__soc-link" href="" target="_blank"
+                            rel="noopener noreferrer nofollow">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section class="gallery">
+            <div class="container">
+                <div class="gallery-card">
+                    <picture>
+                        <source srcset="./images-portfolio/ice-cream_with_roses_mob_1x.jpg 1x,
+                                 ./images-portfolio/ice-cream_with_roses_mob_1x.jpg 2x" media="(max-width:479px)" type="image/jpeg">    
+                        <img src="./images-portfolio/ice-cream_with_roses_mob_1x.jpg 1x" alt="ice-cream_with_roses">
+                    </picture>
+                    <picture>
+                        <source srcset="./images-portfolio/ice-cream_cone_mob_1x.jpg 1x,
+                                        ./images-portfolio/ice-cream_cone_mob_1x.jpg 2x" media="(max-width:479px)"
+                            type="image/jpeg">
+                        <img src="./images-portfolio/ice-cream_cone_mob_1x.jpg 1x" alt="ice-cream_cone">
+                    </picture>
+                    <picture>
+                        <source srcset="./images-portfolio/raspberry_ice-cream_mob_1x.jpg 1x,
+                                        ./images-portfolio/raspberry_ice-cream_mob_1x.jpg 2x" media="(max-width:479px)"
+                            type="image/jpeg">
+                        <img src="./images-portfolio/raspberry_ice-cream_mob_1x.jpg 1x" alt="raspberry_ice-cream">
+                    </picture>
+                    <picture>
+                        <source srcset="./images-portfolio/ice-cream-cones_mob_1x.jpg 1x,
+                                        ./images-portfolio/ice-cream-cones_mob_1x.jpg 2x" media="(max-width:479px)"
+                            type="image/jpeg">
+                        <img src="./images-portfolio/ice-cream-cones_mob_1x.jpg 1x" alt="ice-cream_cones">
+                    </picture>
+                    <picture>
+                        <source srcset="./images-portfolio/girl_with_ice-cream_mob_1x.jpg 1x,
+                                        ./images-portfolio/girl_with_ice-cream_mob_1x.jpg 2x" media="(max-width:479px)"
+                            type="image/jpeg">
+                        <img src="./images-portfolio/girl_with_ice-cream_mob_1x.jpg 1x" alt="girl_with_ice-cream">
+                    </picture>
+                    <picture>
+                        <source srcset="./images-portfolio/ice-cream_with_berries_mob_1x.jpg 1x,
+                                        ./images-portfolio/ice-cream_with_berries_mob_1x.jpg 2x" media="(max-width:479px)"
+                            type="image/jpeg">
+                        <img src="./images-portfolio/ice-cream_with_berries_mob_1x.jpg 1x" alt="Портрет Игоря Демьяненка">
+                    </picture>
+                    <picture>
+                        <source srcset="./images-portfolio/red_ice-cream_cone_mob_1x.jpg 1x,
+                                        ./images-portfolio/red_ice-cream_cone_mob_1x.jpg 2x" media="(max-width:479px)"
+                            type="image/jpeg">
+                        <img src="./images-portfolio/red_ice-cream_cone_mob_1x.jpg 1x" alt="Портрет Игоря Демьяненка">
+                    </picture>
+                    <picture>
+                        <source srcset="./images-portfolio/dog_with_ice-cream_mob_1x.jpg 1x,
+                                        ./images-portfolio/dog_with_ice-cream_mob_1x.jpg 2x" media="(max-width:479px)"
+                            type="image/jpeg">
+                        <img src="./images-portfolio/dog_with_ice-cream_mob_1x.jpg 1x" alt="Портрет Игоря Демьяненка">
+                    </picture>
+                    <picture>
+                        <source srcset="./images-portfolio/ice-coffe_mob_1x.jpg 1x,
+                                        ./images-portfolio/ice-coffe_mob_1x.jpg 2x" media="(max-width:479px)"
+                            type="image/jpeg">
+                        <img src="./images-portfolio/ice-coffe_mob_1x.jpg 1x" alt="Портрет Игоря Демьяненка">
+                    </picture>
+                    <picture>
+                        <source srcset="./images-portfolio/ice-cream_shaker_mob_1x.jpg 1x,
+                                        ./images-portfolio/ice-cream_shaker_mob_1x.jpg 2x" media="(max-width:479px)"
+                            type="image/jpeg">
+                        <img src="./images-portfolio/ice-cream_shaker_mob_1x.jpg 1x" alt="Портрет Игоря Демьяненка">
+                    </picture>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="footer__content container">
+            <div class="address footer__address">
+                <a class="footer__logo--indent logo--white" href=""><span class="footer__logo--main">Web</span>Studio</a>
+                <address class="address__content">
+                    <ul class="address__list">
+                        <li class="address__item">
+                            <a class="address__postal-link" href="https://goo.gl/maps/cTXmJnBmYdjru8LE6"
+                                target="_blank" rel="noopener noreferrer nofollow">г. Киев, пр-т Леси Украинки, 26</a>
+                        </li>
+                        <li class="address__item">
+                            <a class="address__mail-link" href="mailto:info@example.com">info@example.com</a>
+                        </li>
+                        <li class="address__item">
+                            <a class="address__tel-link" href="tel:+380991111111">+38 099 111 11 11</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+            <div class="connection-content footer__connection-content">
+                <p class="connection-content__title footer__connection-content__title">присоединяйтесь</p>
+                <ul class="soc-media__list list">
+                    <li class="soc-media__item">
+                        <a href="" class="soc-media__link">
+                            <svg class="soc-media__icon" width="20" height="20">
+                                <use href="./css/icons/symbol-defs.svg#icon-instagram"></use>
+                            </svg></a>
+                    </li>
+                    <li class="soc-media__item">
+                        <a href="" class="soc-media__link">
+                            <svg class="soc-media__icon" width="20" height="20">
+                                <use href="./css/icons/symbol-defs.svg#icon-twitter"></use>
+                            </svg></a>
+                    </li>
+                    <li class="soc-media__item">
+                        <a href="" class="soc-media__link">
+                            <svg class="soc-media__icon" width="20" height="20">
+                                <use href="./css/icons/symbol-defs.svg#icon-facebook"></use>
+                            </svg></a>
+                    </li>
+                    <li class="soc-media__item">
+                        <a href="" class="soc-media__link">
+                            <svg class="soc-media__icon" width="20" height="20">
+                                <use href="./css/icons/symbol-defs.svg#icon-linkedin"></use>
+                            </svg></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mailing footer__mailing">
+                <form>
+                    <p class="mailing__title footer__mailing__title">Подпишитесь на рассылку</p>
+                    <div class="mailing__actions">
+                        <input type="email" id="email" name="email" class="mailing__input" placeholder="E-mail">
+                        <button type="submit" class="button mailing__button"><span
+                                class="mailing__button-name">Подписаться</span>
+                            <svg class="mailing__icon" width="24" height="24">
+                                <use href="./css/icons/symbol-defs.svg#icon-icon-send"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/menu.js"></script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+</html>
+
+

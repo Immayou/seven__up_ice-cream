@@ -1,0 +1,218 @@
+.examples {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    }
+}
+
+.btn-list {
+    @extend %list;
+    margin-top: 0;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    @media screen and (min-width: 768px) {
+    justify-content: center;
+    }
+    @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    }
+}
+
+.btn-content:not(:last-child) {
+    margin-right: 8px;
+    margin-bottom: 15px;
+}
+
+.examples-btn-item {
+    padding: 6px 22px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    color: var(--portfolio-title-text-color);
+    background-color: var(--portfolio-btn-bcg-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    -ms-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus,
+    &.current {
+        color: #FFFFFF;
+        background-color: var(--accent-color);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+
+}
+
+.examples-list {
+    @extend %list;
+    margin-bottom: -30px;
+
+    @media screen and (min-width: 480px) {
+    max-width: 480px;
+    }
+
+    @media screen and (min-width: 768px) {
+    max-width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin-right: -30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+    margin-right: -30px;
+    }
+}
+
+.examples-item {
+    width: 100%;
+    margin-bottom: 30px;
+    background-color: #FFFFFF;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    -ms-transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+
+    @media screen and (min-width: 768px) {
+    width: calc(100% / 2 - 30px);
+    margin-right: 30px;
+
+    &:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    }
+    }
+        
+    @media screen and (min-width: 1200px) {
+    width: calc(100% / 3 - 30px);
+    margin-right: 30px;
+    }
+}
+
+.examples-top-box {
+    position: relative;
+    overflow: hidden;
+}
+
+.examples-top-text {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 63px 24px;
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.56;
+    background-color: rgba(33, 150, 243, 0.9);
+    color: #FFFFFF;
+    overflow: auto;
+    transform: translateY(101%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    -ms-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transform: translateY(101%);
+    -moz-transform: translateY(101%);
+    -ms-transform: translateY(101%);
+    -o-transform: translateY(101%);
+
+    .examples-item:hover & {
+    transform: translateY(0%);
+    }
+}
+
+.examples-content {
+    padding: 20px 24px;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    flex-grow: 1;
+}
+
+.examples-title {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+
+    color: var(--portfolio-title-text-color);
+
+    margin-bottom: 4px;
+    margin-top: 0;
+}
+
+.examples-text {
+    font-size: 16px;
+    line-height: 1.88;
+
+    color: var(--portfolio-main-text-color);
+
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.gallery {
+    width: 100%;
+    background: linear-gradient(to bottom, #FFF5F6 40%, #FFFFFF 41%);
+}
+
+.gallery .container {
+        width: 100%;
+        padding-right: 20px;
+        padding-left: 20px;
+        margin-right: auto;
+        margin-left: auto;
+        columns: 4;
+        column-gap: 10px;
+        
+        @media screen and (min-width: 480px) {
+            max-width: 480px;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+
+        @media screen and (min-width: 768px) {
+            max-width: 768px;
+            padding-right: 32px;
+            padding-left: 32px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            max-width: 1280px;
+            padding-right: 16px;
+            padding-left: 16px;
+        }
+}
+
+.gallery-card img {
+ border-radius: 10px;
+ -webkit-border-radius: 10px;
+ -moz-border-radius: 10px;
+ -ms-border-radius: 10px;
+ -o-border-radius: 10px;
+//  width: 50px;
+//  height: 50px;
+}
