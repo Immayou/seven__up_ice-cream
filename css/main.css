@@ -1395,33 +1395,25 @@ address {
   }
 }
 
-.gallery-card {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  columns: 6;
-}
 @media screen and (max-width: 480px) {
-  .gallery-card {
+  .gallery-cards {
     width: 320px;
     height: 122px;
   }
 }
 @media screen and (min-width: 768px) {
-  .gallery-card {
+  .gallery-cards {
     width: 680;
     height: 264px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .gallery-card {
+  .gallery-cards {
     height: 430px;
   }
 }
 
-.gallery-card img {
+.gallery-cards img {
   width: 50px;
   height: 50px;
   border-radius: 10px;
@@ -1431,7 +1423,7 @@ address {
   -o-border-radius: 10px;
 }
 
-.gallery-card .card-accent {
+.gallery-cards .card-accent {
   width: 100px;
   height: 100px;
 }
