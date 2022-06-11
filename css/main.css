@@ -1365,9 +1365,8 @@ address {
   width: 100%;
   background: linear-gradient(to bottom, #FFF5F6 40%, #FFFFFF 41%);
 }
-
 .gallery .container {
-  width: 320px;
+  width: 100%;
   padding-right: 20px;
   padding-left: 20px;
   margin-right: auto;
@@ -1395,27 +1394,9 @@ address {
   }
 }
 
-@media screen and (max-width: 480px) {
-  .gallery-cards {
-    width: 320px;
-    height: 122px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .gallery-cards {
-    width: 680;
-    height: 264px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .gallery-cards {
-    height: 430px;
-  }
-}
-
 .gallery-cards img {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
