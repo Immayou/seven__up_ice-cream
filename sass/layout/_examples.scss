@@ -338,34 +338,33 @@ img {
 //     }
 // }
 
-img {
-    border-radius: 10px;
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @media screen and (min-width: 480px) {
+        width: 480px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 1280px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
 }
 
 .gallery {
     background: linear-gradient(to bottom, #FFF5F6 40%, #FFFFFF 41%);
-            .container {
-                width: 100%;
-                margin: 0 auto;
-            
-                @media screen and (min-width: 480px) {
-                    width: 480px;
-                    padding-left: 20px;
-                    padding-right: 20px;
-                }
-            
-                @media screen and (min-width: 768px) {
-                    width: 768px;
-                    padding-left: 32px;
-                    padding-right: 32px;
-                }
-            
-                @media screen and (min-width: 1280px) {
-                    width: 1280px;
-                    padding-left: 16px;
-                    padding-right: 16px;
-                    }
-                }
 }
 
 .gallery-cards {
@@ -380,7 +379,6 @@ img {
     gap: 4px;
  }
 
-
 @media screen and (min-width: 1280px) {
     grid-template-columns: repeat(7, minmax(100px, 1fr));
     grid-template-rows: repeat(21, minmax(15px, 1fr));
@@ -388,6 +386,9 @@ img {
  }
 }
 
+.gallery-box img {
+    border-radius: 10px;
+}
 
 .gallery-box:nth-child(1) {
     grid-column: 1;
@@ -420,13 +421,13 @@ img {
 
 .gallery-box:nth-child(6) {
     grid-column: 5;
-    grid-row: 6;
+    grid-row: 7;
     grid-row-end: span 6;
 }
 
 .gallery-box:nth-child(7) {
     grid-column: 5;
-    grid-row: 12;
+    grid-row: 13;
     grid-row-end: span 6;
 }
 
