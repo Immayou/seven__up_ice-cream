@@ -1401,8 +1401,8 @@ img {
 
 .gallery-cards {
   display: grid;
-  grid-template-columns: repeat(7, minmax(30px, 1fr));
-  grid-template-rows: repeat(21, minmax(6px, 1fr));
+  grid-template-columns: repeat(7, minmax(20px, 1fr));
+  grid-template-rows: repeat(21, minmax(3px, 1fr));
   gap: 1px;
 }
 @media screen and (min-width: 480px) {
