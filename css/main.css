@@ -85,7 +85,7 @@ address {
   pointer-events: none;
 }
 
-.modal {
+.franchise-modal {
   position: absolute;
   width: 310px;
   padding: 10px;
@@ -101,7 +101,7 @@ address {
   -ms-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   -o-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.backdrop.is-hidden .modal {
+.backdrop.is-hidden .franchise-modal {
   transform: skew(10deg);
   -webkit-transform: skew(10deg) scale(0.1);
   -moz-transform: skew(10deg) scale(0.1);
@@ -109,13 +109,13 @@ address {
   -o-transform: skew(10deg) scale(0.1);
 }
 @media screen and (min-width: 480px) {
-  .modal {
+  .franchise-modal {
     width: 450px;
     padding: 39px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .modal {
+  .franchise-modal {
     width: 528px;
   }
 }
@@ -154,7 +154,7 @@ address {
   fill: var(--accent-color);
 }
 
-.modal-tittle {
+.franchise-modal-tittle {
   margin-top: 0;
   margin-bottom: 12px;
   font-weight: 700;
@@ -207,7 +207,7 @@ address {
   position: relative;
 }
 
-.modal-field {
+.franchise-modal-field {
   margin-bottom: 10px;
 }
 
@@ -1490,8 +1490,10 @@ img {
 
 .gallery-box {
   transition: border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .gallery-box:focus, .gallery-box:hover {
+  border: 1px solid #FFFFFF;
   border-radius: 10px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3), 3px 4px 0px rgba(3, 0, 0, 0.1), 6px 4px 1px rgba(0, 0, 0, 0.16);
 }

@@ -20,7 +20,7 @@
 
 <body>
     <!-- Шапка проекта -->
-    <!-- <header class="header">
+    <header class="header">
         <div class="container header__container">
             <nav class="navigation">
                 <a href="" class="header__logo--indent logo--black"><span class="logo--main">Web</span>Studio</a>
@@ -52,11 +52,11 @@
                 </svg>
             </button>
         </div>
-    </header> -->
+    </header>
     
     <!-- Mob-menu -->
     
-    <!-- <div class="mobile-menu is-hidden" id="mobile-menu">
+    <div class="mobile-menu is-hidden" id="mobile-menu">
         <div class="container">
             <div class="mob-menu-top">
                 <button type="button" class="mobile-menu__close-button" aria-expanded="true" aria-controls="mobile-menu">
@@ -94,7 +94,7 @@
                 </ul>
             </div>
         </div>
-    </div> -->
+    </div>
 
     <main>
         <section class="gallery">
@@ -393,14 +393,14 @@
     </main>
 
     <!-- Футер -->
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="footer__content container">
             <div class="address footer__address">
                 <a class="footer__logo--indent logo--white" href=""><span class="footer__logo--main">Web</span>Studio</a>
                 <address class="address__content">
                     <ul class="address__list">
                         <li class="address__item">
-                            <a class="address__postal-link" href="https://goo.gl/maps/cTXmJnBmYdjru8LE6"
+                            <a class="address__postal-link" href="https://goo.gl/maps/A5aZMv5CbanNPUyRA"
                                 target="_blank" rel="noopener noreferrer nofollow">г. Киев, пр-т Леси Украинки, 26</a>
                         </li>
                         <li class="address__item">
@@ -456,7 +456,64 @@
                 </form>
             </div>
         </div>
-    </footer> -->
+        
+        <!-- Modal -->
+        
+        <div class="backdrop is-hidden" data-modal>
+            <div class="franchise-modal">
+                <button type="button" class="franchise-modal-close-btn">
+                    <svg class="icon" width="16" height="16">
+                        <use href="./images/icons/symbol-defs.svg#close"></use>
+                    </svg>
+                </button>
+                <p class="franchise-modal-tittle">PROFITABLE BUSINESS BY FRANCHISE</p>
+                <div class="franchise-modal-field">
+                    <label for="username" class="modal-label">Имя</label>
+                    <div class="modal-input-content">
+                        <input type="text" name="username" id="username" class="modal-input" minlength="2" required autofocus
+                            placeholder=" ">
+                        <svg class="modal-icon" width="18" height="18">
+                            <use href="./css/icons/symbol-defs.svg#icon-person-black"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="modal-field">
+                    <label for="tel" class="modal-label">Телефон</label>
+                    <div class="modal-input-content">
+                        <input type="tel" name="telephone" id="tel" class="modal-input" minlength="17"
+                            title="+38(096)-111-11-11" required placeholder=" ">
+                        <svg class="modal-icon" width="18" height="18">
+                            <use href="./css/icons/symbol-defs.svg#icon-phone-black"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="modal-field">
+                    <label for="mail" class="modal-label">Почта</label>
+                    <div class="modal-input-content">
+                        <input type="email" name="email" id="mail" class="modal-input" required placeholder=" ">
+                        <svg class="modal-icon" width="18" height="18">
+                            <use href="./css/icons/symbol-defs.svg#icon-email-black"></use>
+                        </svg>
+                    </div>
+                </div>
+                <label for="text-area" class="modal-text-area-label">Комментарий</label>
+                <textarea name="text-area" id="text-area" class="modal-text-area" placeholder="Введите текст"></textarea>
+                <div class="check-content">
+                    <input type="checkbox" class="input-check hidden" id="input-check" name="policy" value="policy">
+                    <label for="input-check" class="check-text">
+                        <svg class="modal-check-icon" width="11" height="8">
+                            <use href="./css/icons/symbol-defs.svg#icon-check"></use>
+                        </svg>
+                        <span>Соглашаюсь с рассылкой и принимаю <a href="" target="_blank" class="input-check-rules">Условия
+                                договора</a></span>
+                    </label>
+                </div>
+                <button type="submit" class="modal__button button"><span class="modal-button-name">Отправить</span>
+                </button> -->
+            </div>
+        </div>
+
+    </footer> 
 
     <script src="./js/menu.js"></script>
 </body>
