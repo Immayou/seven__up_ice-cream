@@ -513,44 +513,57 @@
     <div class="backdrop is-hidden" data-modal>
         <div class="franchise-modal">
             <button type="button" class="franchise-modal-close-btn">
-                <svg class="icon" width="16" height="16">
-                    <use href="./images/icons/symbol-defs.svg#close"></use>
+                <svg class="franchise-modal-close-icon" width="16" height="16">
+                    <use href="./icons/symbol-defs.svg#icon-checkmark"></use>
                 </svg>
             </button>
             <p class="franchise-modal-tittle">PROFITABLE BUSINESS BY FRANCHISE</p>
+        <div class="franchise-modal-text-box">
+            <svg class="franchise-modal-first-icon-text" width="18" height="18">
+                <use href="./icons/symbol-defs.svg#icon-checkmark"></use>
+            </svg>
             <p class="franchise-top-text">sell high quality ice-cream</p>
+        </div>
+        <div class="franchise-modal-text-box">
+            <svg class="franchise-modal-second-icon-text" width="18" height="18">
+                <use href="./icons/symbol-defs.svg#icon-checkmark"></use>
+            </svg>
             <p class="franchise-bottom-text">earn between $ 400 and $ 50,000 on a stable business</p>
+        </div>
+            <div class="franchise-modal-box">
+            <p class="franchise-modal-box-title">Learn more</p>
             <div class="franchise-modal-field">
                 <label for="name" class="franchise-modal-label">Name</label>
                 <div class="franchise-modal-input-content">
                     <input type="text" name="username" id="username" class="franchise-modal-input" minlength="2" required autofocus
                         placeholder=" ">
                     <svg class="franchise-modal-icon" width="18" height="18">
-                        <use href="./css/icons/symbol-defs.svg#icon-person-black"></use>
+                        <use href="./icons/symbol-defs.svg#icon-user"></use>
                     </svg>
                 </div>
             </div>
             <div class="franchise-modal-field">
-                <label for="tel" class="franchise-modal-label">Phone</label>
+                <label for="tel" class="franchise-modal-label">Telephone</label>
                 <div class="franchise-modal-input-content">
                     <input type="tel" name="telephone" id="tel" class="franchise-modal-input" minlength="17"
                         title="+38(096)-111-11-11" required placeholder=" ">
                     <svg class="franchise-modal-icon" width="18" height="18">
-                        <use href="./css/icons/symbol-defs.svg#icon-phone-black"></use>
+                        <use href="./icons/symbol-defs.svg#icon-phone"></use>
                     </svg>
                 </div>
             </div>
             <div class="franchise-modal-field">
-                <label for="mail" class="franchise-modal-label">Mail</label>
+                <label for="mail" class="franchise-modal-label">E-mail</label>
                 <div class="franchise-modal-input-content">
                     <input type="email" name="email" id="mail" class="franchise-modal-input" required placeholder=" ">
                     <svg class="franchise-modal-icon" width="18" height="18">
-                        <use href="./css/icons/symbol-defs.svg#icon-email-black"></use>
+                        <use href="./icons/symbol-defs.svg#icon-mail"></use>
                     </svg>
                 </div>
             </div>
-            </div>
-            <button type="submit" class="modal__button button"><span class="modal-button-name">Отправить</span>
+        </div>
+    </div>
+            <button type="submit" class="franchise-modal-btn"><span class="franchise-modal-btn-name">Send</span>
             </button>
         </div>
     </div>

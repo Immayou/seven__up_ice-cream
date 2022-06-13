@@ -52,7 +52,7 @@
     }
 }
 
-.modal-close-btn {
+.franchise-modal-close-btn {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -64,18 +64,21 @@
     padding: 0;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    background-color: #FFFFFF;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    -webkit-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    -moz-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    -ms-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    -o-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: transparent;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    -ms-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.franchise-modal-close-btn-icon {
-    width: 11px;
-    height: 11px;
-    fill: #000000;
+.franchise-modal-close-btn:hover,
+.franchise-modal-close-btn:focus {
+    border-color: #FFFFFF;
+}
+
+.franchise-modal-close-icon {
+    fill: var(--btn-hover-accent);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     -moz-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -84,15 +87,13 @@
 
     .franchise-modal-close-btn:hover &,
     .franchise-modal-close-btn:focus & {
-        fill: var(--accent-color);
+        fill: #FFFFFF;
     }
 }
 
 .franchise-modal-tittle {
-    margin-top: 0;
-    margin-bottom: 12px;
     font-family: 'Titan One', 'Tahoma', sans-serif;
-    font-size: 48px;
+    font-size: 30px;
     line-height: 1.15;
     text-align: center;
     letter-spacing: 0.04em;
@@ -100,36 +101,73 @@
     color: var(--btn-hover-accent);
 }
 
+.franchise-modal-text-box {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 45px;
+}
+
 .franchise-top-text,
 .franchise-bottom-text {
+    margin: 0;
     font-family: 'Titan One', 'Tahoma', sans-serif;
-    font-size: 26px;
+    font-size: 20px;
     line-height: 1.15;
-    text-align: center;
+    text-align: start;
     text-transform: uppercase;
     color: var(--primary-text-color);
 }
 
-.franchise-top-text {
-    margin-bottom: 10px;
+.franchise-modal-first-icon-text,
+.franchise-modal-second-icon-text {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: var(--btn-hover-accent);
 }
 
+.franchise-modal-box {
+    padding: 10px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border: 2px solid var(--btn-hover-accent);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.franchise-modal-box-title {
+    margin: 0;
+    font-family: 'Titan One', 'Tahoma', sans-serif;
+    font-size: 15px;
+    line-height: 1.15;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--bg-menu);
+}
 
 .franchise-modal-label {
     margin-bottom: 4px;
     font-size: 12px;
     line-height: 1.7;
     letter-spacing: 0.01em;
+    color: var(--secondary-text-color);
 }
 
 .franchise-modal-input {
+    display: block;
+    margin: 0 auto;
+    padding-left: 36px;
     width: 100%;
-    height: 40px;
-    padding-left: 42px;
+    height: 30px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     outline: none;
-    color: var(--modal-main-text-color);
+    color: var(--secondary-text-color);
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     -moz-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -138,7 +176,7 @@
 
     &:hover,
     &:focus {
-        border-color: var(--accent-color);
+        border-color: var(--btn-hover-accent);
     }
 
     &::placeholder {
@@ -172,7 +210,7 @@
     left: 12px;
     top: 50%;
     transform: translateY(-50%);
-    fill: var(--modal-main-text-color);
+    fill: var(--lable-text-color);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
@@ -181,7 +219,7 @@
 
     .franchise-modal-input:hover+&,
     .franchise-modal-input:focus+& {
-        fill: var(--accent-color);
+        fill: var(--btn-hover-accent);
     }
 }
 
@@ -193,56 +231,67 @@
 }
 
 
-.check-content {
-    margin-bottom: 30px;
-}
+// .check-content {
+//     margin-bottom: 30px;
+// }
 
-.check-text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 12px;
-    line-height: 1.17;
-    color: var(--modal-secondary-text-color);
+// .check-text {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     font-size: 12px;
+//     line-height: 1.17;
+//     color: var(--modal-secondary-text-color);
 
-    @media screen and (min-width: 1200px) {
-    font-size: 14px;
-    line-height: 1.71;
-    }
-}
+//     @media screen and (min-width: 1200px) {
+//     font-size: 14px;
+//     line-height: 1.71;
+//     }
+// }
 
-.input-check-rules {
-    color: var(--accent-color);
-}
+// .input-check-rules {
+//     color: var(--accent-color);
+// }
 
-.modal-check-icon {
-    width: 16px;
-    height: 15px;
-    margin-right: 7px;
-    border: 2px solid #000000;
-    fill: #FFFFFF;
-    border-radius: 3px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// .modal-check-icon {
+//     width: 16px;
+//     height: 15px;
+//     margin-right: 7px;
+//     border: 2px solid #000000;
+//     fill: #FFFFFF;
+//     border-radius: 3px;
+//     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    .input-check:checked+.check-text & {
-        background-color: var(--accent-color);
-        border-color: transparent;
-        fill: #FFFFFF;
-    }
+//     .input-check:checked+.check-text & {
+//         background-color: var(--accent-color);
+//         border-color: transparent;
+//         fill: #FFFFFF;
+//     }
 
-    .input-check:focus+.check-text & {
-        border-color: var(--accent-color);
-    }
-}
+//     .input-check:focus+.check-text & {
+//         border-color: var(--accent-color);
+//     }
+// }
 
-.modal__button {
+.franchise-modal-btn {
     display: block;
     margin: 0 auto;
     padding: 0;
+    min-width: 200px;
+    min-height: 50px;
+    border-color: transparent;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: #000000;
+    background-color: var(--btn-hover-accent);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
-    &:focus {
-        background-color: #ECECEC;
+    &:hover, &:focus {
+    background-color: #FFFFFF;
     }
 }
-
