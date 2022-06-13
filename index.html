@@ -100,7 +100,7 @@
         <!-- Герой  -->
         <section class="hero">
             <h1 class="hero__title">Эффективные решения<br>для вашего бизнеса</h1>
-            <button type="button" class="button" data-modal-open>Заказать услугу</button>
+            <button type="button" class="franchise-modal" data-modal-open>Заказать услугу</button>
         </section>  
 
         <!-- Преимущества компании -->
@@ -510,8 +510,9 @@
     
     <!-- Modal -->
     
-    <div class="backdrop is-hidden" data-modal>
+    <div class="franchise-backdrop is-hidden">
         <div class="franchise-modal">
+        <div class="animation-ball"></div>
             <button type="button" class="franchise-modal-close-btn">
                 <svg class="franchise-modal-close-icon" width="16" height="16">
                     <use href="./icons/symbol-defs.svg#icon-checkmark"></use>
@@ -530,12 +531,12 @@
             </svg>
             <p class="franchise-bottom-text">earn between $ 400 and $ 50,000 on a stable business</p>
         </div>
-            <div class="franchise-modal-box">
+        <div class="franchise-modal-box">
             <p class="franchise-modal-box-title">Learn more</p>
             <div class="franchise-modal-field">
                 <label for="name" class="franchise-modal-label">Name</label>
                 <div class="franchise-modal-input-content">
-                    <input type="text" name="username" id="username" class="franchise-modal-input" minlength="2" required autofocus
+                    <input type="text" name="username" id="name" class="franchise-modal-input" minlength="2" required autofocus
                         placeholder=" ">
                     <svg class="franchise-modal-icon" width="18" height="18">
                         <use href="./icons/symbol-defs.svg#icon-user"></use>
@@ -562,11 +563,11 @@
                 </div>
             </div>
         </div>
-    </div>
-            <button type="submit" class="franchise-modal-btn"><span class="franchise-modal-btn-name">Send</span>
+        <button type="submit" class="franchise-modal-btn"><span class="franchise-modal-btn-name">Send</span>
             </button>
         </div>
     </div>
+    
 
     <!-- Scripts -->
 
