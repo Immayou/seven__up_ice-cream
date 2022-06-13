@@ -1402,56 +1402,54 @@ img {
 .gallery-cards {
   display: grid;
   grid-template-columns: repeat(7, minmax(20px, 1fr));
-  grid-template-rows: repeat(21, minmax(3px, 1fr));
+  grid-template-rows: repeat(18, minmax(3px, 1fr));
   gap: 1px;
 }
 @media screen and (min-width: 480px) {
   .gallery-cards {
-    grid-template-columns: repeat(7, minmax(41px, 1fr));
-    grid-template-rows: repeat(21, minmax(8px, 1fr));
     gap: 2px;
   }
 }
 @media screen and (min-width: 768px) {
   .gallery-cards {
-    grid-template-columns: repeat(7, minmax(90px, 1fr));
-    grid-template-rows: repeat(21, minmax(12px, 1fr));
     gap: 4px;
   }
 }
 @media screen and (min-width: 1280px) {
   .gallery-cards {
-    grid-template-columns: repeat(7, minmax(100px, 1fr));
-    grid-template-rows: repeat(21, minmax(15px, 1fr));
-    gap: 10px;
+    gap: 6px;
   }
 }
 
 .gallery-box img {
-  border-radius: 10px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
 }
 
 .gallery-box:nth-child(1) {
   grid-column: 1;
-  grid-row: 9;
+  grid-row: 6;
   grid-row-end: span 6;
 }
 
 .gallery-box:nth-child(2) {
   grid-column: 2;
-  grid-row: 6;
+  grid-row: 4;
   grid-row-end: span 6;
 }
 
 .gallery-box:nth-child(3) {
   grid-column: 2;
-  grid-row: 12;
+  grid-row: 10;
   grid-row-end: span 6;
 }
 
 .gallery-box:nth-child(4) {
   grid-column: 3;
-  grid-row: span 15;
+  grid-row: span 12;
   grid-column-start: span 2;
 }
 
@@ -1462,25 +1460,25 @@ img {
 
 .gallery-box:nth-child(6) {
   grid-column: 5;
-  grid-row: 7;
+  grid-row: 5;
   grid-row-end: span 6;
 }
 
 .gallery-box:nth-child(7) {
   grid-column: 5;
-  grid-row: 13;
+  grid-row: 11;
   grid-row-end: span 6;
 }
 
 .gallery-box:nth-child(8) {
   grid-column: 6;
-  grid-row: 5;
+  grid-row: 3;
   grid-row-end: span 6;
 }
 
 .gallery-box:nth-child(9) {
   grid-column: 6;
-  grid-row: 11;
+  grid-row: 9;
   grid-row-end: span 6;
 }
 
@@ -1488,6 +1486,14 @@ img {
   grid-column: 7;
   grid-row: 7;
   grid-row-end: span 6;
+}
+
+.gallery-box {
+  transition: border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.gallery-box:focus, .gallery-box:hover {
+  border-radius: 10px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3), 3px 4px 0px rgba(3, 0, 0, 0.1), 6px 4px 1px rgba(0, 0, 0, 0.16);
 }
 
 .button {
